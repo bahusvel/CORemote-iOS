@@ -1,0 +1,3 @@
+[submodule "CORemote/cor"]
+	path = CORemote/cor
+	url = https://github.com/bahusvel/COR-Framework-Swift.git
