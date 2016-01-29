@@ -15,7 +15,11 @@
 		A8BD8DEF1C5AEF86002B424F /* localDevice.png in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DEE1C5AEF86002B424F /* localDevice.png */; };
 		A8BD8DF31C5AF268002B424F /* boundaryCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DF21C5AF268002B424F /* boundaryCircle.png */; };
 		A8BD8DF51C5AF549002B424F /* CircularUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DF41C5AF549002B424F /* CircularUIView.swift */; };
-		A8BD8DF71C5AFE13002B424F /* cor in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DF61C5AFE13002B424F /* cor */; };
+		A8BD8DFA1C5AFFA9002B424F /* CORModuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DF91C5AFFA9002B424F /* CORModuleButton.swift */; };
+		A8BD8DFC1C5B048B002B424F /* CORModuleRepr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */; };
+		A8BD8DFE1C5B051B002B424F /* CORemoteModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */; };
+		A8BD8E041C5B05BE002B424F /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8E031C5B05BE002B424F /* api.swift */; };
+		A8BD8E061C5B05C4002B424F /* comm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8E051C5B05C4002B424F /* comm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,11 @@
 		A8BD8DF21C5AF268002B424F /* boundaryCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boundaryCircle.png; sourceTree = "<group>"; };
 		A8BD8DF41C5AF549002B424F /* CircularUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularUIView.swift; sourceTree = "<group>"; };
 		A8BD8DF61C5AFE13002B424F /* cor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cor; sourceTree = "<group>"; };
+		A8BD8DF91C5AFFA9002B424F /* CORModuleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CORModuleButton.swift; sourceTree = "<group>"; };
+		A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CORModuleRepr.swift; sourceTree = "<group>"; };
+		A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CORemoteModule.swift; sourceTree = "<group>"; };
+		A8BD8E031C5B05BE002B424F /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = api.swift; path = CORemote/cor/api.swift; sourceTree = "<group>"; };
+		A8BD8E051C5B05C4002B424F /* comm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = comm.swift; path = CORemote/cor/comm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,8 @@
 		A8BD8DCF1C5AEE84002B424F = {
 			isa = PBXGroup;
 			children = (
+				A8BD8E051C5B05C4002B424F /* comm.swift */,
+				A8BD8E031C5B05BE002B424F /* api.swift */,
 				A8BD8DDA1C5AEE84002B424F /* CORemote */,
 				A8BD8DD91C5AEE84002B424F /* Products */,
 			);
@@ -66,7 +77,10 @@
 				A8BD8DED1C5AEF73002B424F /* images */,
 				A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */,
 				A8BD8DDD1C5AEE84002B424F /* ViewController.swift */,
+				A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */,
+				A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */,
 				A8BD8DDF1C5AEE84002B424F /* Main.storyboard */,
+				A8BD8DF91C5AFFA9002B424F /* CORModuleButton.swift */,
 				A8BD8DF41C5AF549002B424F /* CircularUIView.swift */,
 				A8BD8DE21C5AEE84002B424F /* Assets.xcassets */,
 				A8BD8DE41C5AEE84002B424F /* LaunchScreen.storyboard */,
@@ -146,7 +160,6 @@
 				A8BD8DE61C5AEE84002B424F /* LaunchScreen.storyboard in Resources */,
 				A8BD8DE31C5AEE84002B424F /* Assets.xcassets in Resources */,
 				A8BD8DEF1C5AEF86002B424F /* localDevice.png in Resources */,
-				A8BD8DF71C5AFE13002B424F /* cor in Resources */,
 				A8BD8DE11C5AEE84002B424F /* Main.storyboard in Resources */,
 				A8BD8DF31C5AF268002B424F /* boundaryCircle.png in Resources */,
 			);
@@ -159,9 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BD8E041C5B05BE002B424F /* api.swift in Sources */,
+				A8BD8E061C5B05C4002B424F /* comm.swift in Sources */,
+				A8BD8DFE1C5B051B002B424F /* CORemoteModule.swift in Sources */,
+				A8BD8DFA1C5AFFA9002B424F /* CORModuleButton.swift in Sources */,
 				A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */,
 				A8BD8DDC1C5AEE84002B424F /* AppDelegate.swift in Sources */,
 				A8BD8DF51C5AF549002B424F /* CircularUIView.swift in Sources */,
+				A8BD8DFC1C5B048B002B424F /* CORModuleRepr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

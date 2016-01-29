@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func addCORModule(module: CORModuleRepr, location: ModuleLocation){
+        
+    }
 
 
 }
