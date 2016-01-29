@@ -12,7 +12,7 @@ import UIKit
 class CircularUIView: UIView {
 
     var backgroundLayer: CAShapeLayer!
-    @IBInspectable var backgroundLayerColor: UIColor = UIColor.lightGrayColor()
+    @IBInspectable var backgroundLayerColor: UIColor = UIColor.clearColor()
     @IBInspectable var strokeColor: UIColor = UIColor.lightGrayColor()
     @IBInspectable var lineWidth: CGFloat = 1.0
     

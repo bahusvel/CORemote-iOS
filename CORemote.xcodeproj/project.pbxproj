@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8A6ED0F1C5C0A26009C469D /* CORemoteUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */; };
 		A8BD8DDC1C5AEE84002B424F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */; };
 		A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDD1C5AEE84002B424F /* ViewController.swift */; };
 		A8BD8DE11C5AEE84002B424F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DDF1C5AEE84002B424F /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CORemoteUI.swift; path = CORemote/CORemoteUI.swift; sourceTree = "<group>"; };
 		A8BD8DD81C5AEE84002B424F /* CORemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CORemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BD8DDD1C5AEE84002B424F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				A8BD8E051C5B05C4002B424F /* comm.swift */,
 				A8BD8E031C5B05BE002B424F /* api.swift */,
+				A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */,
 				A8BD8DDA1C5AEE84002B424F /* CORemote */,
 				A8BD8DD91C5AEE84002B424F /* Products */,
 			);
@@ -174,6 +177,7 @@
 			files = (
 				A8BD8E041C5B05BE002B424F /* api.swift in Sources */,
 				A8BD8E061C5B05C4002B424F /* comm.swift in Sources */,
+				A8A6ED0F1C5C0A26009C469D /* CORemoteUI.swift in Sources */,
 				A8BD8DFE1C5B051B002B424F /* CORemoteModule.swift in Sources */,
 				A8BD8DFA1C5AFFA9002B424F /* CORModuleButton.swift in Sources */,
 				A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */,
@@ -331,6 +335,7 @@
 				A8BD8DEC1C5AEE84002B424F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

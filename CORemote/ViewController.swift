@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var localDeviceButton: UIButton!
-    
+	@IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var wideArea: CircularUIView!
+	@IBOutlet weak var localArea: CircularUIView!
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +28,6 @@ class ViewController: UIViewController {
     func addCORModule(module: CORModuleRepr, location: ModuleLocation){
         
     }
-
 
 }
 
