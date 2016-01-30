@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8A6ED0F1C5C0A26009C469D /* CORemoteUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */; };
+		A8A6ED111C5C30DD009C469D /* GlowRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED101C5C30DD009C469D /* GlowRingView.swift */; };
 		A8BD8DDC1C5AEE84002B424F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */; };
 		A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDD1C5AEE84002B424F /* ViewController.swift */; };
 		A8BD8DE11C5AEE84002B424F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DDF1C5AEE84002B424F /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CORemoteUI.swift; path = CORemote/CORemoteUI.swift; sourceTree = "<group>"; };
+		A8A6ED101C5C30DD009C469D /* GlowRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowRingView.swift; sourceTree = "<group>"; };
 		A8BD8DD81C5AEE84002B424F /* CORemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CORemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BD8DDD1C5AEE84002B424F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				A8BD8DED1C5AEF73002B424F /* images */,
 				A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */,
 				A8BD8DDD1C5AEE84002B424F /* ViewController.swift */,
+				A8A6ED101C5C30DD009C469D /* GlowRingView.swift */,
 				A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */,
 				A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */,
 				A8BD8DDF1C5AEE84002B424F /* Main.storyboard */,
@@ -182,6 +185,7 @@
 				A8BD8DFA1C5AFFA9002B424F /* CORModuleButton.swift in Sources */,
 				A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */,
 				A8BD8DDC1C5AEE84002B424F /* AppDelegate.swift in Sources */,
+				A8A6ED111C5C30DD009C469D /* GlowRingView.swift in Sources */,
 				A8BD8DF51C5AF549002B424F /* CircularUIView.swift in Sources */,
 				A8BD8DFC1C5B048B002B424F /* CORModuleRepr.swift in Sources */,
 			);

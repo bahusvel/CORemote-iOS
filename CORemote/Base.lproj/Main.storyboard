@@ -39,6 +39,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.5" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nl0-W3-nzd">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcP-MB-0x8" customClass="GlowRingView" customModule="CORemote" customModuleProvider="target">
+                                        <rect key="frame" x="-43" y="86" width="500" height="500"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpW-LX-Dhw" userLabel="Wide Area" customClass="CircularUIView" customModule="CORemote" customModuleProvider="target">
                                         <rect key="frame" x="-43" y="86" width="500" height="500"/>
                                         <subviews>
@@ -52,8 +56,8 @@
                                                             <constraint firstAttribute="height" constant="100" id="eSt-UJ-JPD"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                                                <color key="value" red="0.13099688291549683" green="0.71003890037536621" blue="0.94332307577133179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
@@ -94,13 +98,25 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="WpW-LX-Dhw" firstAttribute="centerY" secondItem="Nl0-W3-nzd" secondAttribute="centerY" id="Lh4-cv-IQq"/>
+                                    <constraint firstItem="gcP-MB-0x8" firstAttribute="height" secondItem="WpW-LX-Dhw" secondAttribute="height" id="PFI-zE-z77"/>
+                                    <constraint firstItem="gcP-MB-0x8" firstAttribute="centerY" secondItem="Nl0-W3-nzd" secondAttribute="centerY" id="Ysb-el-9wk"/>
+                                    <constraint firstItem="gcP-MB-0x8" firstAttribute="width" secondItem="WpW-LX-Dhw" secondAttribute="width" id="f4t-2s-M0m"/>
                                     <constraint firstItem="WpW-LX-Dhw" firstAttribute="centerX" secondItem="Nl0-W3-nzd" secondAttribute="centerX" id="tuO-dw-hgo"/>
+                                    <constraint firstItem="gcP-MB-0x8" firstAttribute="centerX" secondItem="Nl0-W3-nzd" secondAttribute="centerX" id="wdd-Ck-jgp"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
                                         <size key="value" width="500" height="500"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PFI-zE-z77"/>
+                                        <exclude reference="Ysb-el-9wk"/>
+                                        <exclude reference="f4t-2s-M0m"/>
+                                        <exclude reference="wdd-Ck-jgp"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -137,7 +153,13 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                            <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="glowRing" destination="gcP-MB-0x8" id="0zn-f8-nrA"/>
                         <outlet property="localArea" destination="Bc1-bk-WXH" id="gaV-12-Mfh"/>
                         <outlet property="scrollView" destination="Nl0-W3-nzd" id="rNI-XN-jZn"/>
                         <outlet property="wideArea" destination="WpW-LX-Dhw" id="Gl3-eR-bYr"/>

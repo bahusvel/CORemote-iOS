@@ -22,7 +22,7 @@ class CircularUIView: UIView {
     }
     
     func setBackgroundLayer() {
-        
+        self.backgroundColor = UIColor.clearColor()
         if backgroundLayer == nil {
             backgroundLayer = CAShapeLayer()
             layer.addSublayer(backgroundLayer)

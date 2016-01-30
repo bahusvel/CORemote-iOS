@@ -126,6 +126,29 @@ public class CORemoteUI : NSObject {
         CGContextRestoreGState(context)
     }
 
+    public class func drawGlowRing(frame frame: CGRect = CGRectMake(0, 0, 110, 110)) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()
+
+        //// Color Declarations
+        let glowColor = UIColor(red: 0.000, green: 0.679, blue: 1.000, alpha: 1.000)
+
+        //// Shadow Declarations
+        let glow = NSShadow()
+        glow.shadowColor = glowColor
+        glow.shadowOffset = CGSizeMake(0.1, -0.1)
+        glow.shadowBlurRadius = 5
+
+        //// Oval Drawing
+        let ovalPath = UIBezierPath(ovalInRect: CGRectMake(frame.minX + 5, frame.minY + 5, frame.width - 10, frame.height - 10))
+        CGContextSaveGState(context)
+        CGContextSetShadowWithColor(context, glow.shadowOffset, glow.shadowBlurRadius, (glow.shadowColor as! UIColor).CGColor)
+        glowColor.setStroke()
+        ovalPath.lineWidth = 2
+        ovalPath.stroke()
+        CGContextRestoreGState(context)
+    }
+
     //// Generated Images
 
     public class func imageOfModuleRepr(frame frame: CGRect = CGRectMake(0, 0, 110, 110), shapeColor: UIColor = UIColor(red: 0.944, green: 0.108, blue: 0.317, alpha: 1.000), moduleName: String = "Logger") -> UIImage {
