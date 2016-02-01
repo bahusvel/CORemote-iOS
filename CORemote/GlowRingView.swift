@@ -1,22 +1,21 @@
 //
-//  CORModuleButton.swift
+//  GlowRingView.swift
 //  CORemote
 //
-//  Created by denis lavrov on 29/01/16.
+//  Created by denis lavrov on 30/01/16.
 //  Copyright © 2016 Denis Lavrov. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class CORModuleButton: UIButton {
-	@IBInspectable var buttonColor: UIColor = UIColor.blueColor()
-	@IBInspectable var moduleName: String = "ME"
+class GlowRingView: UIView {
 	
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-		CORemoteUI.drawModuleRepr(frame: rect, shapeColor: buttonColor, moduleName: moduleName)
+		CORemoteUI.drawGlowRing(frame: rect)
     }
-
+	
+	
 }
