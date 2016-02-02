@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OrbitalUIVIew.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A85147491C5CAA2800EA0206</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A8BD8DD71C5AEE84002B424F</key>
 		<dict>
 			<key>primary</key>

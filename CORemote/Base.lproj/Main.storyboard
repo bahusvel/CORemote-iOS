@@ -60,6 +60,9 @@
                                                                 <color key="value" red="0.13099688291549683" green="0.71003890037536621" blue="0.94332307577133179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="r2M-9t-tng" kind="show" id="8a6-x8-7xh"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,11 +156,6 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
-                            <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="glowRing" destination="gcP-MB-0x8" id="0zn-f8-nrA"/>
                         <outlet property="localArea" destination="Bc1-bk-WXH" id="gaV-12-Mfh"/>
@@ -169,25 +167,25 @@
             </objects>
             <point key="canvasLocation" x="263" y="577"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Action View Controller-->
         <scene sceneID="vQr-xJ-Iwu">
             <objects>
-                <collectionViewController id="r2M-9t-tng" sceneMemberID="viewController">
+                <collectionViewController id="r2M-9t-tng" customClass="ActionViewController" customModule="CORemote" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RG0-kZ-fwy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1zG-UF-oFA">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="94" height="114"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WeS-Pl-0CW">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WeS-Pl-0CW" customClass="ActionViewCell" customModule="CORemote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -242,4 +240,7 @@
             <point key="canvasLocation" x="874" y="130"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z8b-pL-NWB"/>
+    </inferredMetricsTieBreakers>
 </document>

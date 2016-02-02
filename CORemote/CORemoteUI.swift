@@ -65,7 +65,7 @@ public class CORemoteUI : NSObject {
         CGContextRestoreGState(context)
     }
 
-    public class func drawAction(frame frame: CGRect = CGRectMake(10, 1, 90, 109), shapeColor: UIColor = UIColor(red: 0.944, green: 0.108, blue: 0.317, alpha: 1.000), actionName: String = "Hello, World!") {
+    public class func drawAction(frame frame: CGRect = CGRectMake(10, 1, 90, 109), shapeColor: UIColor = UIColor(red: 0.944, green: 0.108, blue: 0.317, alpha: 1.000), image: UIImage = UIImage(named: "image.png")!, actionName: String = "Hello, World!") {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()
 
@@ -82,9 +82,6 @@ public class CORemoteUI : NSObject {
         shadow.shadowColor = UIColor.blackColor().colorWithAlphaComponent(0.57)
         shadow.shadowOffset = CGSizeMake(0.1, 2.1)
         shadow.shadowBlurRadius = 5
-
-        //// Image Declarations
-        let image = UIImage(named: "image.png")!
 
         //// Variable Declarations
         let strokeSize: CGFloat = 2

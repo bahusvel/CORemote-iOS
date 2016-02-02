@@ -27,8 +27,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let actionController = segue.destinationViewController as? ActionViewController {
+			let module = ModuleRepresentation(moduleID: "com.bahus.SampleModule")
+			module.inputServices = [ServiceRepresentation(name: "SampleInput", type: .Input)]
+			module.outputServices = [ServiceRepresentation(name: "SampleOutput", type: .Output)]
+			actionController.module = module
+		}
+	}
     
-    func addCORModule(module: CORModuleRepr, location: ModuleLocation){
+    func addCORModule(module: ModuleRepresentation){
         
     }
 	
