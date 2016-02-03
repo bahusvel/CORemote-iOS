@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A8A6ED0F1C5C0A26009C469D /* CORemoteUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */; };
 		A8A6ED111C5C30DD009C469D /* GlowRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED101C5C30DD009C469D /* GlowRingView.swift */; };
+		A8A6ED151C5C4994009C469D /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED141C5C4994009C469D /* ActionViewController.swift */; };
+		A8A6ED1D1C5C4D66009C469D /* ActionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6ED1C1C5C4D66009C469D /* ActionViewCell.swift */; };
 		A8BD8DDC1C5AEE84002B424F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */; };
 		A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD8DDD1C5AEE84002B424F /* ViewController.swift */; };
 		A8BD8DE11C5AEE84002B424F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BD8DDF1C5AEE84002B424F /* Main.storyboard */; };
@@ -25,8 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A851474C1C5CAA2800EA0206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A851474E1C5CAA2800EA0206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A85147511C5CAA2800EA0206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A85147531C5CAA2800EA0206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A85147561C5CAA2800EA0206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A85147581C5CAA2800EA0206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CORemoteUI.swift; path = CORemote/CORemoteUI.swift; sourceTree = "<group>"; };
 		A8A6ED101C5C30DD009C469D /* GlowRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowRingView.swift; sourceTree = "<group>"; };
+		A8A6ED141C5C4994009C469D /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		A8A6ED1C1C5C4D66009C469D /* ActionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewCell.swift; sourceTree = "<group>"; };
 		A8BD8DD81C5AEE84002B424F /* CORemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CORemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BD8DDD1C5AEE84002B424F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +66,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A851474B1C5CAA2800EA0206 /* OrbitalUIVIew */ = {
+			isa = PBXGroup;
+			children = (
+				A851474C1C5CAA2800EA0206 /* AppDelegate.swift */,
+				A851474E1C5CAA2800EA0206 /* ViewController.swift */,
+				A85147501C5CAA2800EA0206 /* Main.storyboard */,
+				A85147531C5CAA2800EA0206 /* Assets.xcassets */,
+				A85147551C5CAA2800EA0206 /* LaunchScreen.storyboard */,
+				A85147581C5CAA2800EA0206 /* Info.plist */,
+			);
+			path = OrbitalUIVIew;
+			sourceTree = "<group>";
+		};
+		A8A6ED171C5C49AC009C469D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8BD8DDD1C5AEE84002B424F /* ViewController.swift */,
+				A8A6ED141C5C4994009C469D /* ActionViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A8A6ED1A1C5C4B12009C469D /* Repr */ = {
+			isa = PBXGroup;
+			children = (
+				A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */,
+			);
+			name = Repr;
+			sourceTree = "<group>";
+		};
+		A8A6ED1B1C5C4B24009C469D /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A8A6ED101C5C30DD009C469D /* GlowRingView.swift */,
+				A8BD8DF91C5AFFA9002B424F /* CORModuleButton.swift */,
+				A8BD8DF41C5AF549002B424F /* CircularUIView.swift */,
+				A8A6ED1C1C5C4D66009C469D /* ActionViewCell.swift */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
 		A8BD8DCF1C5AEE84002B424F = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +114,7 @@
 				A8BD8E031C5B05BE002B424F /* api.swift */,
 				A8A6ED0E1C5C0A26009C469D /* CORemoteUI.swift */,
 				A8BD8DDA1C5AEE84002B424F /* CORemote */,
+				A851474B1C5CAA2800EA0206 /* OrbitalUIVIew */,
 				A8BD8DD91C5AEE84002B424F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,13 +133,11 @@
 				A8BD8DF61C5AFE13002B424F /* cor */,
 				A8BD8DED1C5AEF73002B424F /* images */,
 				A8BD8DDB1C5AEE84002B424F /* AppDelegate.swift */,
-				A8BD8DDD1C5AEE84002B424F /* ViewController.swift */,
-				A8A6ED101C5C30DD009C469D /* GlowRingView.swift */,
-				A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */,
-				A8BD8DFB1C5B048B002B424F /* CORModuleRepr.swift */,
+				A8A6ED171C5C49AC009C469D /* Controllers */,
+				A8A6ED1B1C5C4B24009C469D /* CustomUI */,
+				A8A6ED1A1C5C4B12009C469D /* Repr */,
 				A8BD8DDF1C5AEE84002B424F /* Main.storyboard */,
-				A8BD8DF91C5AFFA9002B424F /* CORModuleButton.swift */,
-				A8BD8DF41C5AF549002B424F /* CircularUIView.swift */,
+				A8BD8DFD1C5B051B002B424F /* CORemoteModule.swift */,
 				A8BD8DE21C5AEE84002B424F /* Assets.xcassets */,
 				A8BD8DE41C5AEE84002B424F /* LaunchScreen.storyboard */,
 				A8BD8DE71C5AEE84002B424F /* Info.plist */,
@@ -178,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A6ED1D1C5C4D66009C469D /* ActionViewCell.swift in Sources */,
 				A8BD8E041C5B05BE002B424F /* api.swift in Sources */,
 				A8BD8E061C5B05C4002B424F /* comm.swift in Sources */,
 				A8A6ED0F1C5C0A26009C469D /* CORemoteUI.swift in Sources */,
+				A8A6ED151C5C4994009C469D /* ActionViewController.swift in Sources */,
 				A8BD8DFE1C5B051B002B424F /* CORemoteModule.swift in Sources */,
 				A8BD8DFA1C5AFFA9002B424F /* CORModuleButton.swift in Sources */,
 				A8BD8DDE1C5AEE84002B424F /* ViewController.swift in Sources */,
@@ -194,6 +246,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A85147501C5CAA2800EA0206 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A85147511C5CAA2800EA0206 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A85147551C5CAA2800EA0206 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A85147561C5CAA2800EA0206 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		A8BD8DDF1C5AEE84002B424F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

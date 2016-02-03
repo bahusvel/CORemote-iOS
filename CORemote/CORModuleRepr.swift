@@ -8,8 +8,33 @@
 
 import Foundation
 
-class CORModuleRepr {
+class ModuleRepresentation {
+	let moduleID: String
+	let moduleName: String = "ModuleName"
+	var inputServices: [ServiceRepresentation] = []
+	var outputServices: [ServiceRepresentation] = []
+	
+	init(moduleID: String){
+		self.moduleID = moduleID
+	}
 
+}
+
+class ServiceRepresentation {
+	let name: String
+	let type: ServiceType
+	
+	init(name: String, type: ServiceType){
+		self.name = name
+		self.type = type
+	}
+	
+	
+}
+
+enum ServiceType{
+	case Input
+	case Output
 }
 
 enum ModuleLocation {
